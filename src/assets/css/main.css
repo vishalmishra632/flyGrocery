@@ -1634,7 +1634,7 @@ ol {
 
 @media (max-width: 767px) {
   .header .navbar-brand img {
-    width: 160px;
+    width: 100px;
   }
 }
 
