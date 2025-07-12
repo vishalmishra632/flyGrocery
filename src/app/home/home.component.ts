@@ -27,4 +27,13 @@ export class HomeComponent implements OnInit {
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+
+  setActiveNav(event: Event) {
+    // Remove active class from all nav items
+    const navItems = document.querySelectorAll('.navbar-nav .nav-item a');
+    navItems.forEach(item => item.classList.remove('active'));
+
+    // Add active class to clicked item
+    (event.target as HTMLElement).classList.add('active');
+  }
 }

@@ -1302,23 +1302,23 @@ ol {
   color: #fff !important;
   background: transparent !important;
   border: 2px solid #fff;
-  padding: 11px 30px;
+  padding: 13px 30px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .button .btn-alt {
-    padding: 10px 30px;
+    padding: 12px 30px;
   }
 }
 
 @media (max-width: 767px) {
   .button .btn-alt {
-    padding: 10px 30px;
+    padding: 12px 30px;
   }
 }
 
 .button .btn-alt:hover {
-  background-color: #fff !important;
+  background-color: #0033A0 !important;
   color: #F7DC00 !important;
 }
 
@@ -1447,9 +1447,9 @@ ol {
   .header .navbar-nav .nav-item {
     margin: 0;
   }
-  .header .navbar-nav .nav-item:hover a {
-    color: #F7DC00;
-  }
+    .header .navbar-nav .nav-item:hover a {
+      color: #0033A0 !important;
+    }
   .header .navbar-nav .nav-item a {
     padding: 12px 16px !important;
   }
@@ -1535,9 +1535,9 @@ ol {
   .header .navbar .navbar-nav .nav-item a:hover {
     color: #F7DC00 !important;
   }
-  .header .navbar .navbar-nav .nav-item a.active {
-    color: #F7DC00 !important;
-  }
+    .header .navbar .navbar-nav .nav-item a.active {
+      color: #0033A0 !important;
+    }
   .header .navbar-nav .nav-item {
     margin: 0;
   }
@@ -1681,7 +1681,7 @@ ol {
 }
 
 .sticky .navbar .navbar-nav .nav-item a.active {
-  color: #F7DC00;
+  color: #0033A0 !important;
 }
 
 .sticky .navbar .navbar-nav .nav-item a {
@@ -1786,7 +1786,7 @@ ol {
 }
 
 .sticky .navbar-nav .nav-item:hover a {
-  color: #F7DC00;
+  color: #0033A0 !important;
 }
 
 .navbar-nav .nav-item a {
@@ -2039,11 +2039,12 @@ ol {
   margin-top: 40px;
 }
 
-.hero-area .hero-content .button .btn {
-  background-color: #fff;
-  color: #F7DC00;
-  margin-right: 12px;
-}
+  .hero-area .hero-content .button .btn {
+    background-color: #F7DC00;
+    color: #fff;
+    margin-right: 12px;
+    border: 2px solid #fff;
+  }
 
 .hero-area .hero-content .button .btn i {
   font-size: 17px;
@@ -2054,15 +2055,16 @@ ol {
     color: #fff;
   }
 
-.hero-area .hero-content .button .btn.btn-alt {
-  background-color: #ffffff6b;
-  color: #fff;
-}
+    .hero-area .hero-content .button .btn.btn-alt {
+      background-color: #F7DC00;
+      color: #fff;
+    }
 
-.hero-area .hero-content .button .btn.btn-alt:hover {
-  background-color: #fff;
-  color: #F7DC00;
-}
+      .hero-area .hero-content .button .btn.btn-alt:hover {
+        background-color: #0033A0 !important;
+        color: #fff !important; /* ← Add !important */
+        border-color: #0033A0 !important;
+      }
 
 @media (max-width: 767px) {
   .hero-area .hero-content .button .video-button {

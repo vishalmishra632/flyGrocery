@@ -19,19 +19,19 @@
             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
               <ul id="nav" class="navbar-nav ms-auto">
                 <li class="nav-item">
-                  <a href="#home" class="page-scroll active" aria-label="Home">Home</a>
+                  <a href="#home" class="page-scroll active" (click)="setActiveNav($event)">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#features" class="page-scroll" aria-label="Features">Features</a>
+                  <a href="#features" class="page-scroll" (click)="setActiveNav($event)">Features</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#about" class="page-scroll" aria-label="About">About</a>
+                  <a href="#about" class="page-scroll" (click)="setActiveNav($event)">About</a>
                 </li>
+                <!--<li class="nav-item">
+                  <a href="#pricing" class="page-scroll" (click)="setActiveNav($event)">Pricing</a>
+                </li>-->
                 <li class="nav-item">
-                  <a href="#pricing" class="page-scroll" aria-label="Pricing">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#contact" class="page-scroll" aria-label="Contact">Contact</a>
+                  <a href="#contact" class="page-scroll" (click)="setActiveNav($event)">Contact</a>
                 </li>
               </ul>
             </div>
@@ -171,7 +171,7 @@
 </section>
 <!-- End Achievement Area -->
 <!-- Start Pricing Table Area -->
-<section id="pricing" class="pricing-table section">
+<!--<section id="pricing" class="pricing-table section">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -254,7 +254,7 @@
       </div>
     </div>
   </div>
-</section>
+</section>-->
 <!-- End Pricing Table Area -->
 <!-- Start Call To Action Area -->
 <section class="section call-action">
@@ -324,11 +324,11 @@
               <div class="single-footer f-link">
                 <h3>Categories</h3>
                 <ul>
-                  <li><a href="#fruits">Fresh Fruits</a></li>
-                  <li><a href="#vegetables">Vegetables</a></li>
-                  <li><a href="#dairy">Dairy Products</a></li>
-                  <li><a href="#snacks">Snacks</a></li>
-                  <li><a href="#beverages">Beverages</a></li>
+                  <li><a href="#fruits">Dal & Rice</a></li>
+                  <li><a href="#vegetables">Tea & coffee</a></li>
+                  <li><a href="#dairy">Oil & Ghee</a></li>
+                  <li><a href="#snacks">Dry Fruits</a></li>
+                  <li><a href="#beverages">Spices & Others</a></li>
                 </ul>
               </div>
             </div>
