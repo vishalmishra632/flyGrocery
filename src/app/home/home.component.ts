@@ -36,4 +36,30 @@ export class HomeComponent implements OnInit {
     // Add active class to clicked item
     (event.target as HTMLElement).classList.add('active');
   }
+
+  scrollToCategories(event: Event) {
+    event.preventDefault();
+
+    // Remove active class from all nav items
+    const navItems = document.querySelectorAll('.navbar-nav .nav-item a');
+    navItems.forEach(item => item.classList.remove('active'));
+
+    // Add active class to Categories link
+    (event.target as HTMLElement).classList.add('active');
+
+    // Scroll to categories section
+    const categoriesSection = document.getElementById('categories-section');
+    if (categoriesSection) {
+      categoriesSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      // Add highlight effect
+      categoriesSection.classList.add('highlight-section');
+
+      // Remove highlight and active class after 2 seconds
+      setTimeout(() => {
+        categoriesSection.classList.remove('highlight-section');
+        (event.target as HTMLElement).classList.remove('active');
+      }, 2000);
+    }
+  }
 }

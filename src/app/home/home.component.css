@@ -51,3 +51,61 @@
     opacity: 1;
     visibility: visible;
   }
+
+/* Add highlight animation for categories section */
+.highlight-section {
+  animation: highlightPulse 2s ease-in-out;
+  position: relative;
+  border-radius: 8px;
+}
+
+@keyframes highlightPulse {
+  0% {
+    background-color: transparent;
+  }
+
+  25% {
+    background-color: rgba(247, 220, 0, 0.3);
+    transform: scale(1.02);
+  }
+
+  50% {
+    background-color: rgba(247, 220, 0, 0.2);
+  }
+
+  100% {
+    background-color: transparent;
+    transform: scale(1);
+  }
+}
+
+/* Ensure smooth transitions */
+.single-footer {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Optional: Add border effect during highlight */
+.highlight-section::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 2px solid #F7DC00;
+  border-radius: 8px;
+  opacity: 0;
+  animation: borderFade 2s ease-in-out;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes borderFade {
+  0%, 100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

@@ -1665,9 +1665,9 @@ ol {
 .sticky {
   position: fixed;
   z-index: 99;
-  background-color: #fff;
+  background-color: #F7DC00;
   -webkit-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   top: 0;
@@ -1684,11 +1684,11 @@ ol {
 }
 
 .sticky .navbar .navbar-nav .nav-item a.active {
-  color: #0033A0 !important;
+  color: #fff !important;
 }
 
 .sticky .navbar .navbar-nav .nav-item a {
-  color: #F7DC00;
+  color: #0033A0;
 }
 
 .header .navbar .navbar-nav .nav-item .sub-menu a.active {
@@ -1700,7 +1700,7 @@ ol {
 }
 
 .sticky .navbar .mobile-menu-btn .toggler-icon {
-  background: #333;
+  background: #0033A0;
 }
 
 /*===== NAVBAR =====*/
@@ -1712,17 +1712,17 @@ ol {
   padding: 0;
 }
 
-.navbar-area.sticky {
-  position: fixed;
-  z-index: 99;
-  background: #F7DC00;
-  -webkit-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
-  -webkit-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-  background: #fff;
-  padding: 0px 0;
-}
+  .navbar-area.sticky {
+    position: fixed;
+    z-index: 99;
+    background: #F7DC00;
+    -webkit-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    background: #F7DC00;
+    padding: 0px 0;
+  }
 
 .navbar {
   padding: 0;
@@ -1789,7 +1789,7 @@ ol {
 }
 
 .sticky .navbar-nav .nav-item:hover a {
-  color: #0033A0 !important;
+  color: #fff !important;
 }
 
 .navbar-nav .nav-item a {
