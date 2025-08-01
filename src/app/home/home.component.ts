@@ -4,7 +4,8 @@ import { Component, OnInit, HostListener } from '@angular/core';
   selector: 'app-home',
   templateUrl: './home.component.html',
   standalone: false,
-  styleUrls: []
+  styleUrls: [],
+
 })
 export class HomeComponent implements OnInit {
 

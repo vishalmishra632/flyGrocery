@@ -303,3 +303,102 @@ ul, ol {
   ::-webkit-scrollbar-thumb:hover {
     background: #1e3a8a;
   }
+
+
+
+
+
+
+/* FSSAI license logo styling - Add this to your home.component.css */
+.fssai-logo-container {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  /* Ensure the container doesn't float or have positioning issues */
+  position: relative;
+  clear: both;
+  overflow: hidden;
+}
+
+  .fssai-logo-container img {
+    /* Control the size - adjust as needed */
+    width: 180px;
+    height: auto;
+    display: block;
+    /* Remove any potential floating or absolute positioning */
+    position: static !important;
+    float: none !important;
+    /* Ensure proper margins */
+    margin: 0;
+    /* Add a subtle border for professional appearance (optional) */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+/* Desktop alignment - left aligned */
+@media (min-width: 768px) {
+  .fssai-logo-container {
+    text-align: left;
+  }
+
+    .fssai-logo-container img {
+      margin-left: 0;
+      margin-right: auto;
+    }
+}
+
+/* Mobile alignment - centered */
+@media (max-width: 767px) {
+  .fssai-logo-container {
+    text-align: center;
+  }
+
+    .fssai-logo-container img {
+      margin-left: auto;
+      margin-right: auto;
+      /* Slightly smaller on mobile */
+      width: 150px;
+    }
+}
+
+/* Ensure social media icons have proper spacing */
+.footer .single-footer.f-about .social {
+  margin-top: 30px;
+  /* Add margin bottom to separate from FSSAI logo */
+  margin-bottom: 0;
+}
+
+/* Ensure copyright text has proper spacing */
+.footer .single-footer.f-about .copyright-text {
+  color: #D2D6DC;
+  font-size: 14px;
+  margin-top: 0;
+  /* Clear any floating elements */
+  clear: both;
+}
+
+/* Additional safety rules to prevent floating issues */
+.footer .single-footer.f-about {
+  /* Ensure proper containing of floated elements */
+  overflow: hidden;
+}
+
+/* If the image is still floating, these rules will force it into position */
+.footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Specific override for any inherited positioning */
+.footer .fssai-logo-container img {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  transform: none !important;
+  z-index: 1 !important;
+}
+
+
